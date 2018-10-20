@@ -10,7 +10,6 @@ class Cookie
        @health = 100
        @lowDefense = 0
        @defense = Random.new.rand(@lowDefense..100)
-       @weapons = []
        @winCount = 0
   end
   def changeDefense()
