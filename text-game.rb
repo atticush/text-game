@@ -87,7 +87,8 @@ class Foe
             elsif num.between?(11,15)
                puts "Entering things other yes or no makes me uncomfy.  Please don't make me uncomfy."
             elsif num.between?(16,20)
-               puts "Type yes or no please.  I feel as though you are mocking me."
+               puts "Type yes or no please.  I feel as though you are mocking me. I will therefore inflict damage because of your rudeness."
+               cookie.health -= 5
             else num.between?(6,10)
                puts "Enter yes or no, I have no time for games.  Other than the game we are playing."
             end
