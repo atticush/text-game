@@ -1,6 +1,6 @@
 class Cookie
    
-   attr_accessor :name, :health, :defense, :weapons, :lowDefense, :winCount
+   attr_accessor :name, :health, :defense, :lowDefense, :winCount
    attr_writer :intelligence
    
   def initialize(name, intelligence)
@@ -10,7 +10,6 @@ class Cookie
        @health = 100
        @lowDefense = 0
        @defense = Random.new.rand(@lowDefense..100)
-       @weapons = []
        @winCount = 0
   end
   def changeDefense()
